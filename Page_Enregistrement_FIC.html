@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fiche Identification Client</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form action="envoi-email.php" method="post">
+		<h2><a href="FIC13">Fiche Identification Client</a></h2>
+		
+		<label for="RaisonSociale">Raison sociale :</label>
+		<input type="text" id="RaisonSociale" name="RaisonSociale" required>
+		
+		<label for="SIREN">SIREN :</label>
+		<input type="number" id="SIREN" name="SIREN" required>
+		
+		<label for="FormeJuridique">Forme juridique :</label>
+		<select id="FormeJuridique" name="FormeJuridique">
+			<option value="Entreprise individuelle (EI)">Entreprise individuelle (EI)</option>
+			<option value="Entreprise unipersonnelle à responsabilité limitée (EURL)">Entreprise unipersonnelle à responsabilité limitée (EURL)</option>
+			<option value="Société à responsabilité limitée (SARL)">Société à responsabilité limitée (SARL)</option>
+			<option value="Société anonyme (SA)">Société anonyme (SA)</option>
+			<option value="Société par actions simplifiée (SAS)">Société par actions simplifiée (SAS)</option>
+			<option value="Société par actions simplifiée unipersonnelle (SASU)">Société par actions simplifiée unipersonnelle (SASU)</option>
+			<option value="Société en nom collectif (SNC)">Société en nom collectif (SNC)</option>
+		
+</body>

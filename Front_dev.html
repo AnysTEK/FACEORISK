@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Face aux Risques</title>
+	<link rel="stylesheet" type="text/css" href="Front_dev.css">
+</head>
+<body>
+	<header>
+		<div class="logo-container">
+			<img src="Images/bandeau_ariskan.jpg" alt="ARISKAN logo">
+			<h1>Face aux Risques</h1>
+		</div>
+		<div class="nav-buttons-container">
+			<nav class="left-nav">
+				<ul>
+					<li><a href="regfront01">Enregistrement et autorisation</a></li>
+					<li><a href="ste02">Paramétrage entreprise</a></li>
+					<li><a href="process03">Paramétrage Processus</a></li>
+					<li><a href="partie04">Parties Prenantes</a></li>
+					<li><a href="docu05">Documents et Reporting</a></li>
+					<li><a href="tbdb06">Tableaux de Bord</a></li>
+					<li><a href="planact07">Planifier et Agir</a></li>
+					<li><a href="risk08">Scénarisation des risques</a></li>
+				</ul>
+			</nav>
+			<nav class="right-nav">
+				<ul>
+					<li><a href="veil09">Veille règlementaire</a></li>
+					<li><a href="eco10">Intelligence économique</a></li>
+					<li><a href="top11">Top risques</a></li>
+					<li><a href="assist12">Assistance</a></li>
+				</ul>
+			</nav>
+		</div>
+        <div class="bannerActu">
+            <h1>Actualité Ariskan et management des risques</h1>
+          </div>
+	</header>
+	<main>
+		<div class="news-container">
+			<a href="fil13">
+				<div class="news-box">Actualités</div>
+			</a>
+		</div>
+		<div class="bottom-buttons-container">
+			<a href="reco14">
+				<div class="bottom-button">Recommandez-nous</div>
+			</a>
+			<a href="contact15">
+				<div class="bottom-button">Contactez-nous</div>
+			</a>
+		</div>
+	</main>
+	<audio id="bip">
+		<source src="bip.mp3" type="audio/mp3">
+	</audio>
+	<script type="text/javascript">
+		var buttons = document.querySelectorAll("a");
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].addEventListener("click", function() {
+				document.getElementById("bip").play();
+			});
+		}
+	</script>
+</body>
+</html>
